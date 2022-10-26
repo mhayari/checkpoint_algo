@@ -1,0 +1,21 @@
+algorithm reading sentence
+
+var:
+
+num,numWrd,numVowels:integer
+str:string
+
+
+
+BEGIN
+
+write('enter a sentence')
+read(str)
+numCh:=str.length
+afficher('le The length of the sentence (the number of characters) is : '+num)
+numWrd:=str.split(' ').length
+afficher('The number of words in the sentence: '+numWrd)
+numVowels:=str.match(/[a&e&i&o&u&y]/ig).length
+afficher('The number of vowels in the sentence :'+numVowels)
+
+END
